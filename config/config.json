@@ -2,7 +2,7 @@
     "developpement" : {
         "mode": "dev",
         "port": 8080,
-        "dbConnection": "ConnectionString dev"
+        "dbConnection": "Server=localhost;Database=DemoTechnobel;User Id=UserTB;Password=Test1234=;TrustServerCertificate=True;"
     },
     "production": {
         "mode": "prod",

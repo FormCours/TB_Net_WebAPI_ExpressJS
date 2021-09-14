@@ -1,6 +1,10 @@
 const express = require('express');
 const loadConfig = require('./config');
 const router = require('./routes');
+const {testConnection} = require('./models/db-connector')
+
+// Test de la connection à la base de donnée
+testConnection();
 
 // Chargement du fichier de config
 const { mode, port } = loadConfig();
