@@ -1,0 +1,17 @@
+{
+    "developpement" : {
+        "mode": "dev",
+        "port": 8080,
+        "dbConnection": "ConnectionString dev"
+    },
+    "production": {
+        "mode": "prod",
+        "port": 5555,
+        "dbConnection": "ConnectionString prod"
+    },
+    "local": {
+        "mode": "local",
+        "port": 3333,
+        "dbConnection": "ConnectionString local"
+    }
+}

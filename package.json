@@ -1,0 +1,26 @@
+{
+  "name": "demo01-web-api",
+  "version": "1.0.0",
+  "description": "Demo d'un web API avec MSSQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --developpement",
+    "prod" : "node server.js --production"
+  },
+  "keywords": [
+    "TechnoBel",
+    "NodeJS",
+    "ExpressJS",
+    "WebAPI"
+  ],
+  "author": "Aurélien",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mssql": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
