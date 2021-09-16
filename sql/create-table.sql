@@ -6,10 +6,10 @@ CREATE TABLE Bread (
 	Name NVARCHAR(100) NOT NULL,
 	Price DECIMAL,
 	Weight DECIMAL,
-	Categorie NVARCHAR(50)
+	Category NVARCHAR(50)
 );
 
-INSERT INTO Bread (Name, Price, Weight, Categorie)
+INSERT INTO Bread (Name, Price, Weight, Category)
  VALUES ('Petite Baguette Blanche', 0.75, 150, 'Baguette'),
 		('Baguette Blanche', 1.5, 250, 'Baguette'),
 		('Baguette à l''ancienne', 2.5, 250, 'Baguette'),
