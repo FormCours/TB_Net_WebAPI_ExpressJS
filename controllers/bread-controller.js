@@ -51,13 +51,46 @@ module.exports = {
         }
     },
 
-    put: (req, res) => {
-        res.sendStatus(501);
+    put: async (req, res) => {
+        try {
+            const breadId = parseInt(req.params.id);
+            const {name, price, weight} = req.body;
+
+            if(!name || name.trim() === '' || price <= 0 || weight <= 0) {
+                res.status(400).json({error: 'Bad params !'});
+                return;
+            }
+
+            const isOk = await breadModel.update(breadId, req.body);
+
+            if(!isOk) {
+                res.status(500).json({error: 'Update fail !'});
+                return;
+            }
+            
+            res.sendStatus(204);
+        }
+        catch(err) {
+            res.sendStatus(500);
+        }
     },
 
-    delete: (req, res) => {
-        res.sendStatus(501);
-    }
+    delete: async (req, res) => {
+        try {
+            const breadId = parseInt(req.params.id);
 
+            const isOk = await breadModel.delete(breadId);
+
+            if(!isOk) {
+                res.sendStatus(404);
+                return;
+            }
+
+            res.sendStatus(204);
+        }
+        catch(err) {
+            res.sendStatus(500);
+        }
+    }
 };
 
