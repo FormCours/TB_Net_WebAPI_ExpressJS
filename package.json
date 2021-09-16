@@ -22,5 +22,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormCours/TB_Net_WebAPI_ExpressJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FormCours/TB_Net_WebAPI_ExpressJS/issues"
+  },
+  "homepage": "https://github.com/FormCours/TB_Net_WebAPI_ExpressJS#readme"
 }
